@@ -55,6 +55,8 @@ For SQLite, no additional setup is required as the script will create or use an 
 ### Data Preparation
 Place your stock data file (e.g., `stocks.csv`) in the `res` folder within the same directory/folder as the `stockreport.ipynb` file. Ensure the data format aligns with the script's expectations (`Symbol`, `Date`, `Open`, `High`, `Low`, `Close`, `Volume`).
 
+![image](https://github.com/gigi-vu2804/stockanalysisreport_automation/assets/138411807/cc0e7cc9-cb97-40cd-af71-7c7f24dabd86)
+
 
 ## Running the Script
 ### Configure the Script
@@ -77,6 +79,7 @@ The script will generate:
 
 - **Database Tables** : Data will be saved in specified tables within the SQLite database. the stock_analysis.db file will be stored inside `database` directory/folder
 - **Visualization Images**: Correlation matrix images will be saved in the `correlation_matrix` directory/folder
+![image](https://github.com/gigi-vu2804/stockanalysisreport_automation/assets/138411807/5fadf99f-95b1-44dd-937c-09f834b5374a)
 
 ## Open the SQLite Database:
 
