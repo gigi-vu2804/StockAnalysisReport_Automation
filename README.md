@@ -1,11 +1,16 @@
 # Stock Analysis and Reporting Automation
+@author: gigivu-2804
+The `stockreport.ipynb` Python script automates the process of 
+- Analyze raw stocks data from a csv file,
+- Generate reports on the biggest daily movers and average percentage changes of each stock,
+- Store the generated data to a SQL Server (in this case SQLite Database), 
+- Generate & save the image of stocks correlation matrix.
 
-The `stockreport.ipynb` Python script provides a comprehensive analysis of stock data, generating reports on the biggest daily movers, average percentage changes, and visualizing stock correlations. This document outlines the steps required to set up and run the script along with its dependencies.
+This document outlines the steps required to set up and run the script along with its dependencies.
 
 ## Dependencies
 
 The script requires the following Python packages:
-
 - `pandas`: For data manipulation and analysis.
 - `numpy`: For numerical calculations.
 - `sqlalchemy`: For database interaction.
