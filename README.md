@@ -53,7 +53,7 @@ Extract the downloaded ZIP file to a directory on your computer, such as C:\sqli
 For SQLite, no additional setup is required as the script will create or use an existing `.db` file as specified. In the main usage of `stockreport.ipynb`, we're using `stock_analysis.db` as the database file path.
 
 ### Data Preparation
-Place your stock data file (e.g., `stocks.csv`) in the same directory/folder as the `stockreport.ipynb` file. Ensure the data format aligns with the script's expectations (`Symbol`, `Date`, `Open`, `High`, `Low`, `Close`, `Volume`).
+Place your stock data file (e.g., `stocks.csv`) in the `res` folder within the same directory/folder as the `stockreport.ipynb` file. Ensure the data format aligns with the script's expectations (`Symbol`, `Date`, `Open`, `High`, `Low`, `Close`, `Volume`).
 
 
 ## Running the Script
@@ -75,8 +75,8 @@ Ensure all cells are executed in order to perform the complete analysis and gene
 ## Output
 The script will generate:
 
-- **Database Tables** : Data will be saved in specified tables within the SQLite database.
-- **Visualization Images**: Correlation matrix images will be saved in the specified directory.
+- **Database Tables** : Data will be saved in specified tables within the SQLite database. the stock_analysis.db file will be stored inside `database` directory/folder
+- **Visualization Images**: Correlation matrix images will be saved in the `correlation_matrix` directory/folder
 
 ## Open the SQLite Database:
 
@@ -87,12 +87,12 @@ sqlite3 stock_analysis.db
 
 If sqlite3.exe is in your PATH but you are not in the directory of your database, use the full path to your database file:
 ```bash
-sqlite3 C:\path\to\db\stock_analysis.db
+sqlite3 C:\path\to\database\stock_analysis.db
 ```
 
 If sqlite3.exe is not in your PATH, you need to navigate to the directory where sqlite3.exe is located or specify its full path before the database path:
 ```bash
-C:\path\to\sqlite3 C:\path\to\db\stock_analysis.db
+C:\path\to\sqlite3 C:\path\to\database\stock_analysis.db
 ```
 
 ### Useful SQL or SQLite-specific commands
