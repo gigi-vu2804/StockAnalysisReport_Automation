@@ -73,6 +73,54 @@ The script will generate:
 - **Database Tables** : Data will be saved in specified tables within the SQLite database.
 - **Visualization Images**: Correlation matrix images will be saved in the specified directory.
 
+## Open the SQLite Database:
+
+If sqlite3.exe is in your PATH and you are in the directory of your database (e.g. `C:\3. Personal\stockanalysisreport_automation\database\`), simply type:
+```bash
+sqlite3 stock_analysis.db
+```
+
+If sqlite3.exe is in your PATH but you are not in the directory of your database, use the full path to your database file:
+```bash
+sqlite3 C:\path\to\db\stock_analysis.db
+```
+
+If sqlite3.exe is not in your PATH, you need to navigate to the directory where sqlite3.exe is located or specify its full path before the database path:
+```bash
+C:\path\to\sqlite3 C:\path\to\db\stock_analysis.db
+```
+
+### Useful SQL or SQLite-specific commands
+List All Tables:
+```bash
+.tables
+```
+This command lists all tables in your database.
+
+Schema of a Table:
+```bash
+.schema tablename
+```
+Replace tablename with the actual name of your table. This command shows the CREATE statement used to create the table, which includes all column names and types.
+
+Selecting Data:
+```sql
+SELECT * FROM tablename;
+```
+This is a SQL query that selects all columns from a specific table. Replace tablename with the name of the table you want to query. Remember to end SQL statements with a semicolon (;).
+
+Exiting SQLite:
+```bash
+.quit
+```
+This command exits the SQLite command-line interface and returns you to the CMD prompt.
+
+Getting Help:
+```bash
+.help
+```
+This shows a list of all dot commands and a brief description of their functionality.
+
 ## Troubleshooting
 If you encounter any errors related to database connections, ensure your database file path is correct.
 For issues with data formats, verify that your CSV file matches the expected schema.
