@@ -1,5 +1,6 @@
 # Stock Analysis and Reporting Automation
 @author: gigivu-2804
+
 The `stockreport.ipynb` Python script automates the process of 
 - Analyze raw stocks data from a csv file,
 - Generate reports on the biggest daily movers and average percentage changes of each stock,
